@@ -1,56 +1,53 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Math-Magicians 
 
-> This is a project to learn react library as the learning is moving on
+> This is a Math-Magicians calculator project to demostrate the knowledge acquired so far of React.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./src/images/screenshot.jpeg)
 
-Additional description about the project and its features.
+## ⚒️  Built with
 
-## Built With
+- Html
+- Css
+- JavaScript
+- React
 
-- Major languages
-  - JavaScript
-  - HTML
-  - CSS
-  - Bootstrap
-  - Webpack
-- Frameworks
-  - React
-- Technologies used
+## 🎞️ Frameworks and Technologies used
 
-## Live Demo
+- Bootstrap
+- Webpack
+- HTML
+- CSS
+- JavaScript
+- React
 
-[Live Demo Link](https://livedemo.com)
+## 🖥️ Live Demo
+- [Demo]() :point_left:
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy up and running on your machine, follow these simple steps.
+Enter this in your terminal 👇 
+``` 
+  git clone git@github.com:Qoosim/math-magicians-react.git 
+``` 
+## 🛠️ Prerequisites
+```
+  Install Node.js on your machine
+```
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+## 🕹️ Setup
+```
+  Clone the repository on your machine and cd into it
+  run npm install
+  run npm run build
+  run npm run start
+```
 ## Author
 
-👤 **Author**
+👤 **Qoosim AbdulGhaniyy**
 
-- GitHub: [@githubhandle](https://github.com/Qoosim)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/qoosim/)
+- GitHub: [Qoosim](https://github.com/Qoosim)
+- LinkedIn: [Qoosim](https://www.linkedin.com/in/qoosim)
 
 ## 🤝 Contributing
 
@@ -64,9 +61,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- To those assist in understanding the concept of React 
 
 ## 📝 License
 
