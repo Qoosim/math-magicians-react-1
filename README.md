@@ -2,7 +2,7 @@
 
 > This is a Math-Magicians calculator project to demostrate the knowledge acquired so far of React.
 
-![screenshot](./src/images/calculator.jpeg)
+![screenshot](./src/images/calculator_ui.jpeg)
 
 ## ⚒️  Built with
 
