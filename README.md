@@ -2,7 +2,7 @@
 
 > This is a Math-Magicians calculator project to demostrate the knowledge acquired so far of React.
 
-![screenshot](./src/images/screenshot.jpeg)
+![screenshot](./src/images/calculator.jpeg)
 
 ## ⚒️  Built with
 
@@ -34,12 +34,10 @@ Enter this in your terminal 👇
 ```
   Install Node.js on your machine
 ```
-
 ## 🕹️ Setup
 ```
   Clone the repository on your machine and cd into it
   run npm install
-  run npm run build
   run npm run start
 ```
 ## Author
