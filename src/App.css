@@ -41,7 +41,7 @@
   grid-column: 1 / -1;
   background: #848693;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   word-wrap: break-word;
   word-break: break-all;
