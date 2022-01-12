@@ -1,6 +1,7 @@
 import React from 'react';
 import Calculator from './components/Calculator';
 import Home from './components/Home';
+import Quote from './components/Quote';
 
 class App extends React.Component { // eslint-disable-line
   render() {
@@ -8,6 +9,7 @@ class App extends React.Component { // eslint-disable-line
       <div>
         <Home />
         <Calculator />
+        <Quote />
       </div>
     );
   }

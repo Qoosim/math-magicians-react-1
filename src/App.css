@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Karla:ital,wght@0,300;0,600;1,400&display=swap');
 
-/*
-font-family: 'Inter', sans-serif;
-font-family: 'Karla', sans-serif;
-*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/** Navbar for Home, Calculator, and Quote **/
 .navbar {
   display: flex;
   align-items: center;
@@ -41,6 +37,7 @@ section {
   padding: 2rem;
 }
 
+/** Sections for Home, Calculator, and Quote **/
 section > h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -55,6 +52,20 @@ section > p {
   font-family: 'Karl', sans-serif;
 }
 
+/** Section for Quote page **/
+.quote {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.quote-msg {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+/** Section for Calculator page **/
 .cal-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
