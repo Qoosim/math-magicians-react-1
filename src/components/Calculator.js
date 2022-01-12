@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import calculate from '../logic/calculate';
+import Nav from './Nav';
 
-function Calculator() {
+const Calculator = () => {
   const [data, setData] = React.useState({
     total: null,
     next: null,
@@ -15,20 +15,7 @@ function Calculator() {
 
   return (
     <main>
-      <nav className="navbar">
-        <h1 className="title-text">Math Magicians</h1>
-        <ul className="nav-list">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/calculator">Calculator</Link>
-          </li>
-          <li>
-            <Link to="/quote">Quote</Link>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
       <section className="cal-section">
         <h3>Let us do some math</h3>
         <div className="calc-grid">
@@ -64,6 +51,6 @@ function Calculator() {
       </section>
     </main>
   );
-}
+};
 
 export default Calculator;
