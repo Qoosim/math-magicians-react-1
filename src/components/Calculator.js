@@ -1,6 +1,5 @@
 import React from 'react';
 import calculate from '../logic/calculate';
-import Nav from './Nav';
 
 const Calculator = () => {
   const [data, setData] = React.useState({
@@ -15,7 +14,6 @@ const Calculator = () => {
 
   return (
     <main>
-      <Nav />
       <section className="cal-section">
         <h3>Let us do some math</h3>
         <div className="calc-grid">
