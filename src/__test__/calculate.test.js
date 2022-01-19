@@ -56,4 +56,72 @@ describe('Test for calculate logic', () => {
       operation: null,
     });
   });
+
+  test('for minus operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '5'));
+    Object.assign(operation, calculate(operation, '-'));
+    Object.assign(operation, calculate(operation, '2'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      total: '3',
+      operation: null,
+    });
+  });
+
+  test('for multiplicate operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '5'));
+    Object.assign(operation, calculate(operation, 'x'));
+    Object.assign(operation, calculate(operation, '2'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      total: '10',
+      operation: null,
+    });
+  });
+
+  test('for multiplicate operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '10'));
+    Object.assign(operation, calculate(operation, '÷'));
+    Object.assign(operation, calculate(operation, '2'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      total: '5',
+      operation: null,
+    });
+  });
+
+    test('for point symbol', () => {
+      Object.assign(operation, calculate(operation, 'AC'));
+      Object.assign(operation, calculate(operation, '1'));
+      expect(calculate(operation, '.')).toEqual({
+        next: '1.',
+        total: null,
+        operation: null,
+      });
+  });
+
+  test('for plus/minus symbol', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '1'));
+    expect(calculate(operation, '+/-')).toEqual({
+      next: '-1',
+      total: null,
+      operation: null,
+    });
+  });
+
+  test('for modulus operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '15'));
+    Object.assign(operation, calculate(operation, '%'));
+    Object.assign(operation, calculate(operation, '5'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      total: '0',
+      operation: null,
+    });
+  });
 });
