@@ -93,14 +93,14 @@ describe('Test for calculate logic', () => {
     });
   });
 
-    test('for point symbol', () => {
-      Object.assign(operation, calculate(operation, 'AC'));
-      Object.assign(operation, calculate(operation, '1'));
-      expect(calculate(operation, '.')).toEqual({
-        next: '1.',
-        total: null,
-        operation: null,
-      });
+  test('for point symbol', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '1'));
+    expect(calculate(operation, '.')).toEqual({
+      next: '1.',
+      total: null,
+      operation: null,
+    });
   });
 
   test('for plus/minus symbol', () => {
