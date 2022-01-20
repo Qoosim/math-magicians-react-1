@@ -1,6 +1,5 @@
 import React from 'react';
 import calculate from '../logic/calculate';
-import Nav from './Nav';
 
 const Calculator = () => {
   const [data, setData] = React.useState({
@@ -10,12 +9,11 @@ const Calculator = () => {
   });
 
   const handleClick = (event) => {
-    setData((prevData) => calculate(prevData, event.target.innerText));
+    setData((prevData) => calculate(prevData, event.target.textContent));
   };
 
   return (
     <main>
-      <Nav />
       <section className="cal-section">
         <h3>
           Are you ready to challenge your skill?
@@ -24,7 +22,7 @@ const Calculator = () => {
         </h3>
         <div className="calc-grid">
           <div className="output-div">
-            <div className="output">
+            <div className="output" data-testid="output">
               {
                 (data.total ? data.total : '')
                   + (data.operation ? data.operation : '')

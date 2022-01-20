@@ -1,9 +1,7 @@
 import React from 'react';
-import Nav from './Nav';
 
 const Home = () => (
   <main className="home-container">
-    <Nav />
     <section>
       <h3>Welcome to the home of mathematics!</h3>
       <p>

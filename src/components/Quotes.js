@@ -1,9 +1,7 @@
 import React from 'react';
-import Nav from './Nav';
 
 const Quotes = () => (
   <main>
-    <Nav />
     <section>
       <h1 className="quote">Qoute of the day</h1>
       <p className="quote-msg">
